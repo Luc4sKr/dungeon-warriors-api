@@ -14,5 +14,7 @@ namespace DungeonWarriors.Domain.Entities
         public string Name { get; set; }
         public string Image { get; set; }
         public int Damage { get; set; }
+
+        public virtual Character? Character { get; set; }
     }
 }

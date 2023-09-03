@@ -24,7 +24,7 @@ namespace DungeonWarriors.Domain.Entities
         public string Password { get; set; }
 
         [Required]
-        public DateOnly CreatedOn { get; set; }
+        public DateTime CreatedOn { get; set; }
 
         public int Score { get; set; }
         public int Coins { get; set; }

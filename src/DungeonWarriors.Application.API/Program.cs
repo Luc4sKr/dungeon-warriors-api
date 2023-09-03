@@ -20,7 +20,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<SQLServerContext>
-    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
+    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServerConnection")));
 
 // Repositories
 
