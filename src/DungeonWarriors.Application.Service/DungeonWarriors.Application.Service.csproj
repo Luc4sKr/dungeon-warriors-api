@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="SQLServerServices\" />
+    <ProjectReference Include="..\DungeonWarriors.Domain\DungeonWarriors.Domain.csproj" />
+    <ProjectReference Include="..\DungeonWarriors.Infra.Data.Repository\DungeonWarriors.Infra.Data.Repository.csproj" />
   </ItemGroup>
 
 </Project>

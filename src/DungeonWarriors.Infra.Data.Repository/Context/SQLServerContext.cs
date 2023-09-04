@@ -17,15 +17,15 @@ namespace DungeonWarriors.Infra.Data.Repository.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Character>()
-            //    .HasOne(character => character.Player)
-            //    .WithMany(player => player.Characters)
-            //    .HasForeignKey(character => character.PlayerId);
+            modelBuilder.Entity<Character>()
+                .HasOne(character => character.Player)
+                .WithMany(player => player.Characters)
+                .HasForeignKey(character => character.PlayerId);
 
-            //modelBuilder.Entity<Character>()
-            //    .HasOne(character => character.Weapon)
-            //    .WithOne(weapon => weapon.Character)
-            //    .HasForeignKey<Character>(character => character.WeaponId);
+            modelBuilder.Entity<Character>()
+                .HasOne(character => character.Weapon)
+                .WithOne(weapon => weapon.Character)
+                .HasForeignKey<Character>(character => character.WeaponId);
         }
 
         #region DbSets

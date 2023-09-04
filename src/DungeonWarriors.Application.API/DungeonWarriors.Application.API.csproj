@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DungeonWarriors.Application.Service\DungeonWarriors.Application.Service.csproj" />
     <ProjectReference Include="..\DungeonWarriors.Domain\DungeonWarriors.Domain.csproj" />
     <ProjectReference Include="..\DungeonWarriors.Infra.Data.Repository\DungeonWarriors.Infra.Data.Repository.csproj" />
